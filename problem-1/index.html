@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>First Div</div>
+
+    <div id="new"> Second Div</div>
+
+    <div>Third Div</div><br>
+
+    <div class="divs">Fourth div</div>
+    <div class="divs">Five div</div>
+    <div class="divs">Six Div</div><br>
+
+    <div id="id1">Seventh Div</div><br>
+    <div id="eight">Eight Div</div><br>
+    <div id="ninth">Ninth Div</div><br>
+    <script>
+
+        //First Task
+        document.querySelector('div').innerText = 'Jainuddin Shaikh'
+
+        // Second Task
+        document.querySelector('#new').innerText=' '
+        const tag = document.createElement('p')
+        const text = document.createTextNode('I am jainuddin shaikh.I have copleted BCA in 2021.Now i am learning Full stack web development from Aircampus')
+        tag.appendChild(text)
+        const element = document.getElementById('new')
+        element.appendChild(tag)
+
+        // Third Task
+        document.querySelectorAll('div')[2].style.color='red'
+
+        // Fourth Task/Five Task /Six Task
+
+         document.querySelectorAll('.divs')[0].style.border = '1px solid black'
+         document.querySelectorAll('.divs')[0].innerText = 'Fourth'
+         document.querySelectorAll('.divs')[1].style.border = '1px solid black'
+         document.querySelectorAll('.divs')[1].innerText = 'Fifth'
+         document.querySelectorAll('.divs')[2].style.border = '1px solid black'
+         document.querySelectorAll('.divs')[2].innerText = 'Sixth'
+
+        // Seveth Task
+        document.getElementById('id1').append(' Aircampus')
+
+        // Eight Task
+        document.querySelector('#eight').innerText = ' <div class="new_html"> <p>This is my firs assignment</p> </div> '
+
+        // Ninth Task
+        document.getElementById('ninth').innerHTML = 'My Experience With Aircampus'
+        document.getElementById('ninth').style.color = 'hotpink'
+        const newtag = document.createElement('p')
+        const newtext = document.createTextNode(' My all Experience with Aircampus is ==> I love Aircampus and  all the faculty of Aircampus. They are teaching honest And i hope only this bootcamp will place all students ')
+        newtag.appendChild(newtext)
+        const newelement = document.getElementById('ninth')
+        newelement.appendChild(newtag)
+    </script>
+</body>
+</html>
